@@ -16,10 +16,13 @@ git clone https://github.com/Moenly/figma-section-layout.git ~/.codex/skills/fig
 
 如果只想检查，可以说「用 $figma-section-layout 检查画框和 Remark 的间距，列出偏差」。
 
+只有画框和 Remark 时，skill 会依据画框内容和流程创建左侧分类卡、上方模块条，以及分支所需的小组标题。
+
 ## 默认排版
 
 | 元素 | 规则 |
 | --- | --- |
+| 模块标题底边到画框顶边 | 统一 240 px，有无小组均预留 |
 | 同组画框 | 水平净距 120 px |
 | 不同功能组 | 水平净距 240 px |
 | 左侧分类到首组 | 水平净距 240 px |

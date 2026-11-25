@@ -28,8 +28,9 @@ function planLayout(input) {
     const headerHeight = Math.max(...modules.map(m => number(m.title.height, 'title height', 0.001)));
     const subHeight = Math.max(0, ...modules.flatMap(m => list(m.groups, 'groups')
       .map(g => g.title ? number(g.title.height, 'subtitle height', 0.001) : 0)));
-    const preferredGap = number(row.headerGap ?? (subHeight ? 225 : 125), 'header gap');
-    const boardTop = rowTop + headerHeight + Math.max(preferredGap, subHeight);
+    const headerGap = number(row.headerGap ?? 240, 'header gap');
+    if (subHeight > headerGap) throw Error('Subgroup title exceeds reserved header gap');
+    const boardTop = rowTop + headerHeight + headerGap;
     put(row.category, left, boardTop, row.category.width, row.category.height, 'category');
     let x = left + row.category.width + 240;
     bottom = Math.max(boardTop + row.category.height, number(row.occupiedBottom ?? 0, 'occupied bottom'));
