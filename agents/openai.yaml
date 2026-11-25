@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figma 功能画布整理"
+  short_description: "按分类、模块和功能组对齐画框，统一画板备注与间距，保留预留空间"
+  default_prompt: "用 $figma-section-layout 整理我选中的 Figma Section，统一画框间距和 Remark。"

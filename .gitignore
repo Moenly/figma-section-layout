@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+.npmrc
+.netrc
+.aws/
+.ssh/
+secrets/
+credentials*.json
+service-account*.json
