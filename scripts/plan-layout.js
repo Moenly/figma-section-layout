@@ -63,7 +63,7 @@ function planLayout(input) {
       const headerWidth = x - 240 - moduleLeft;
       put(mod.title, moduleLeft, rowTop + headerHeight - mod.title.height, headerWidth, mod.title.height, 'module');
     }
-    rowTop = bottom + number(row.rowGap ?? 800, 'row gap');
+    rowTop = bottom + number(row.rowGap ?? 480, 'row gap');
   }
   return {
     placements,

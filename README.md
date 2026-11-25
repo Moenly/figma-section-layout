@@ -23,6 +23,7 @@ git clone https://github.com/Moenly/figma-section-layout.git ~/.codex/skills/fig
 | 元素 | 规则 |
 | --- | --- |
 | 模块标题底边到画框顶边 | 统一 240 px，有无小组均预留 |
+| 相邻大分类 | 上一排最低内容（含 Remark）到下一排模块标题顶边 480 px |
 | 同组画框 | 水平净距 120 px |
 | 不同功能组 | 水平净距 240 px |
 | 左侧分类到首组 | 水平净距 240 px |
